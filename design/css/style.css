@@ -1,0 +1,99 @@
+body {
+  text-align:center;
+  font-family: Calibri, "Vera Sans", sans-serif;
+}
+
+div#container {
+  width: 725px;
+  text-align:left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background-image:url('../images/nb-head-home.png');
+  width:725px;
+  height:95px;
+}
+
+header h1 {
+  display: none;
+}
+
+nav {
+  border-bottom:2px solid #ff5400;
+  float: left;
+  width: 100%;
+  clear: both;
+  font-family:"Times New Roman", serif;
+}
+
+nav ul {
+  float: left;
+  width: 100%;
+  clear: both;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  margin-left: 244px;
+}
+
+nav ul li {
+  float: left;
+  width: 115px;
+  border-bottom-width:6px;
+  border-bottom-style:solid;
+  border-bottom-color:#ff5400;
+  text-align: center;
+  line-height:26px;
+  margin-right: 7px;
+}
+
+nav ul li.home {
+  border-bottom-color:#ff5400;
+}
+
+nav ul li.works {
+  border-bottom-color:#ea2b55;
+}
+
+nav ul li.about {
+  border-bottom-color:#56bf30;
+}
+
+nav ul li.contact {
+  border-bottom-color:#005cf5;
+}
+
+nav ul li a {
+  text-decoration:none;
+  color: #000;
+}
+
+nav ul li a:hover {
+  text-decoration:underline;
+}
+
+#sideimage {
+  width:244px;
+  background-image:url('../images/nb-image-home.png');
+  background-repeat:no-repeat;
+  height: 281px;
+  float: left;
+}
+
+#content {
+  float: left;
+  margin-top: 1em;
+  width: 481px;
+}
+
+#content h1,
+#content h2,
+#content h3,
+#content ul,
+#content ol,
+#content table,
+#content div,
+#content p {
+  margin-bottom: 1em;
+}
