@@ -1,6 +1,10 @@
 body {
   text-align:center;
-  font-family: Calibri, "Vera Sans", sans-serif;
+  font-family: 'Telex', sans-serif;
+}
+
+strong, h1, h2, h3, h4, h5, h6 {
+  font-weight:bold;
 }
 
 div#container {
@@ -10,22 +14,20 @@ div#container {
   margin-right: auto;
 }
 
-header {
-  background-image:url('../images/nb-head-home.png');
+header#header {
   width:725px;
   height:95px;
 }
 
-header h1 {
+header#header h1 {
   display: none;
 }
 
 nav {
-  border-bottom:2px solid #ff5400;
   float: left;
   width: 100%;
   clear: both;
-  font-family:"Times New Roman", serif;
+  font-family: 'Amethysta', serif;
 }
 
 nav ul {
@@ -48,52 +50,229 @@ nav ul li {
   margin-right: 7px;
 }
 
+nav ul li a {
+  text-decoration:none;
+  color: #000;
+  display:block;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+#sideimage {
+  width:244px;
+  background-repeat:no-repeat;
+  height: 281px;
+  float: left;
+}
+
+.content {
+  float: left;
+  margin-top: 1em;
+  width: 481px;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content ul,
+.content ol,
+.content table,
+.content div,
+.content p,
+.extra h1,
+.extra h2,
+.extra h3,
+.extra ul,
+.extra ol,
+.extra table,
+.extra div,
+.extra p {
+  margin-bottom: 1em;
+}
+
+.content a,
+.extra a {
+  text-decoration:none;
+}
+
+.content a:hover,
+.extra a:hover {
+  text-decoration:underline;
+}
+
+.extra header.sub {
+  float: left;
+  width: 100%;
+  clear: both;
+  padding: 1ex 0px 1ex 0px;
+}
+
+.extra header.sub h1,
+.extra header.sub section.date,
+.extra header.sub section.more {
+  float: left;
+  margin:0;
+}
+
+.extra header.sub h1 {
+  width: 400px;
+}
+
+.extra header.sub section.date {
+  width: 244px;
+  font-size: .8em;
+}
+
+.extra header.sub section.more {
+  width: 81px;
+  font-size: .8em;
+}
+
+.extra section.text {
+  float: left;
+  width: 481px;
+  clear: both;
+  margin-left: 244px;
+  padding-top: 1em;
+}
+
+/* coloring per section */
+
+/* home */
+.home header#header {
+  background-image:url('../images/nb-head-home.png');
+}
+
+.home #sideimage {
+  background-image:url('../images/nb-image-home.png');
+}
+
+.home nav {
+  border-bottom:2px solid #ff5400;
+}
+
 nav ul li.home {
   border-bottom-color:#ff5400;
+}
+
+nav ul li.home a:hover {
+  background-color:#ff5400;
+}
+
+.home .content a,
+.home .extra a {
+  color: #ff5400;
+}
+
+.home .extra article:first-child header.sub {
+  border-top: 1px solid #ff5400;
+}
+
+.home .extra header.sub {
+  border-bottom: 1px solid #ff5400;
+}
+
+/* works */
+.works header#header {
+  background-image:url('../images/nb-head-works.png');
+}
+
+.works #sideimage {
+  background-image:url('../images/nb-image-works.png');
+}
+
+.works nav {
+  border-bottom:2px solid #ea2b55;
 }
 
 nav ul li.works {
   border-bottom-color:#ea2b55;
 }
 
+nav ul li.works a:hover {
+  background-color:#ea2b55;
+}
+
+.works .content a,
+.works .extra a {
+  color: #ea2b55;
+}
+
+.works .extra article:first-child header.sub {
+  border-top: 1px solid #ea2b55;
+}
+
+.works .extra header.sub {
+  border-bottom: 1px solid #ea2b55;
+}
+
+/* about */
+.about header#header {
+  background-image:url('../images/nb-head-about.png');
+}
+
+.about #sideimage {
+  background-image:url('../images/nb-image-about.png');
+}
+
+.about nav {
+  border-bottom:2px solid #56bf30;
+}
+
 nav ul li.about {
   border-bottom-color:#56bf30;
+}
+
+nav ul li.about a:hover {
+  background-color:#56bf30;
+}
+
+.about .content a,
+.about .extra a {
+  color: #56bf30;
+}
+
+.about .extra article:first-child header.sub {
+  border-top: 1px solid #56bf30;
+}
+
+.about .extra header.sub {
+  border-bottom: 1px solid #56bf30;
+}
+
+/* contact */
+.contact header#header {
+  background-image:url('../images/nb-head-contact.png');
+}
+
+.contact #sideimage {
+  background-image:url('../images/nb-image-contact.png');
+}
+
+.contact nav {
+  border-bottom:2px solid #005cf5;
 }
 
 nav ul li.contact {
   border-bottom-color:#005cf5;
 }
 
-nav ul li a {
-  text-decoration:none;
-  color: #000;
+nav ul li.contact a:hover {
+  background-color:#005cf5;
 }
 
-nav ul li a:hover {
-  text-decoration:underline;
+.contact .content a,
+.contact .extra a {
+  color: #005cf5;
 }
 
-#sideimage {
-  width:244px;
-  background-image:url('../images/nb-image-home.png');
-  background-repeat:no-repeat;
-  height: 281px;
-  float: left;
+.contact .extra article:first-child header.sub {
+  border-top: 1px solid #005cf5;
 }
 
-#content {
-  float: left;
-  margin-top: 1em;
-  width: 481px;
+.contact .extra header.sub {
+  border-bottom: 1px solid #005cf5;
 }
 
-#content h1,
-#content h2,
-#content h3,
-#content ul,
-#content ol,
-#content table,
-#content div,
-#content p {
-  margin-bottom: 1em;
-}
