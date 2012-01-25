@@ -28,6 +28,7 @@ nav {
   width: 100%;
   clear: both;
   font-family: 'Amethysta', serif;
+  font-style: italic;
 }
 
 nav ul {
@@ -44,7 +45,6 @@ nav ul li {
   width: 115px;
   border-bottom-width:6px;
   border-bottom-style:solid;
-  border-bottom-color:#ff5400;
   text-align: center;
   line-height:26px;
   margin-right: 7px;
@@ -100,6 +100,12 @@ nav ul li a:hover {
 .content a:hover,
 .extra a:hover {
   text-decoration:underline;
+}
+
+.extra article {
+  float: left;
+  width: 100%;
+  clear: both;
 }
 
 .extra header.sub {
@@ -170,6 +176,7 @@ nav ul li.home a:hover {
   border-top: 1px solid #ff5400;
 }
 
+.home .extra article.border-bottom,
 .home .extra header.sub {
   border-bottom: 1px solid #ff5400;
 }
@@ -204,6 +211,7 @@ nav ul li.works a:hover {
   border-top: 1px solid #ea2b55;
 }
 
+.works .extra article.border-bottom,
 .works .extra header.sub {
   border-bottom: 1px solid #ea2b55;
 }
@@ -238,6 +246,7 @@ nav ul li.about a:hover {
   border-top: 1px solid #56bf30;
 }
 
+.about .extra article.border-bottom,
 .about .extra header.sub {
   border-bottom: 1px solid #56bf30;
 }
@@ -272,6 +281,7 @@ nav ul li.contact a:hover {
   border-top: 1px solid #005cf5;
 }
 
+.contact .extra article.border-bottom,
 .contact .extra header.sub {
   border-bottom: 1px solid #005cf5;
 }

@@ -8,15 +8,18 @@ $(function() {
     if(openArticleId != null) {
       // close
       $('#' + openArticleId + ' section.text').slideToggle();
+      $('#' + openArticleId).removeClass('border-bottom');
     }
 
     if(openArticleId != myId) {
       // open
-      $(this).parents('article:first').find('section.text').slideToggle();
+      var article = $(this).parents('article:first');
+      $(article).find('section.text').slideToggle();
+      $(article).addClass('border-bottom');
       $('html, body').animate(
         { scrollTop: $(this).offset().top },
         { duration: 'slow', easing: 'swing'}
-        ); // scroll to element
+      ); // scroll to element
       openArticleId = myId;
     } else {
       openArticleId = null;
