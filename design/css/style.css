@@ -1,6 +1,7 @@
 body {
   text-align:center;
   font-family: 'Telex', sans-serif;
+  padding: 15px 0px 15px 0px;
 }
 
 strong, h1, h2, h3, h4, h5, h6 {
@@ -144,6 +145,17 @@ nav ul li a:hover {
   padding-top: 1em;
 }
 
+/* shuffle */
+nav ul li.works a,
+nav ul li.contact a {
+  padding-bottom:5px;
+}
+
+nav ul li.home a,
+nav ul li.about a {
+  padding-top:5px;
+}
+
 /* coloring per section */
 
 /* home */
@@ -191,29 +203,29 @@ nav ul li.home a:hover {
 }
 
 .works nav {
-  border-bottom:2px solid #ea2b55;
+  border-bottom:2px solid #ff0066;
 }
 
 nav ul li.works {
-  border-bottom-color:#ea2b55;
+  border-bottom-color:#ff0066;
 }
 
 nav ul li.works a:hover {
-  background-color:#ea2b55;
+  background-color:#ff0066;
 }
 
 .works .content a,
 .works .extra a {
-  color: #ea2b55;
+  color: #ff0066;
 }
 
 .works .extra article:first-child header.sub {
-  border-top: 1px solid #ea2b55;
+  border-top: 1px solid #ff0066;
 }
 
 .works .extra article.border-bottom,
 .works .extra header.sub {
-  border-bottom: 1px solid #ea2b55;
+  border-bottom: 1px solid #ff0066;
 }
 
 /* about */
@@ -226,29 +238,29 @@ nav ul li.works a:hover {
 }
 
 .about nav {
-  border-bottom:2px solid #56bf30;
+  border-bottom:2px solid #33cc33;
 }
 
 nav ul li.about {
-  border-bottom-color:#56bf30;
+  border-bottom-color:#33cc33;
 }
 
 nav ul li.about a:hover {
-  background-color:#56bf30;
+  background-color:#33cc33;
 }
 
 .about .content a,
 .about .extra a {
-  color: #56bf30;
+  color: #33cc33;
 }
 
 .about .extra article:first-child header.sub {
-  border-top: 1px solid #56bf30;
+  border-top: 1px solid #33cc33;
 }
 
 .about .extra article.border-bottom,
 .about .extra header.sub {
-  border-bottom: 1px solid #56bf30;
+  border-bottom: 1px solid #33cc33;
 }
 
 /* contact */
@@ -261,28 +273,28 @@ nav ul li.about a:hover {
 }
 
 .contact nav {
-  border-bottom:2px solid #005cf5;
+  border-bottom:2px solid #0066ff;
 }
 
 nav ul li.contact {
-  border-bottom-color:#005cf5;
+  border-bottom-color:#0066ff;
 }
 
 nav ul li.contact a:hover {
-  background-color:#005cf5;
+  background-color:#0066ff;
 }
 
 .contact .content a,
 .contact .extra a {
-  color: #005cf5;
+  color: #0066ff;
 }
 
 .contact .extra article:first-child header.sub {
-  border-top: 1px solid #005cf5;
+  border-top: 1px solid #0066ff;
 }
 
 .contact .extra article.border-bottom,
 .contact .extra header.sub {
-  border-bottom: 1px solid #005cf5;
+  border-bottom: 1px solid #0066ff;
 }
 
