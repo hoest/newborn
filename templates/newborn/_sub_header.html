@@ -1,0 +1,46 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>
+      [[ if $pagetype=="entry" || $pagetype=="page" ]][[title]] - [[sitename]]
+      [[ else ]][[sitename]][[/if]]
+    </title>
+    <meta name="description"
+          content="[[if $pagetype=='entry' || $pagetype=='page' ]][[introduction|strip_tags|trimlen:250:'...']][[ else ]][[ sitename ]][[/if]]">
+    <meta name="author"
+          content="[[if $pagetype=='entry' || $pagetype=='page' ]][[ user ]] - [[ sitename ]][[ else ]][[ sitename ]][[ /if ]]">
+    <meta name="keywords"
+          content="[[keywords|replace:' ':', ']]">
+    <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+    <!-- CSS: implied media="all" -->
+    <link rel="stylesheet" href="[[ template_dir base="true" ]]pivotx_essentials.css" />
+    <link rel="stylesheet" href="[[template_dir]]css/reset.css" />
+    <link rel="stylesheet" href="[[template_dir]]css/style.css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Amethysta|Telex">
+    <script src="[[template_dir]]js/modernizr.min.js"></script>
+  </head>
+  <body>
+    <div id="container" class="[[ $page.uri ]]">
+      <header id="header">
+        <h1>[[sitename]]</h1>
+      </header>
+      <nav id="navigation">
+        <ul>
+          [[ getpagelist var="pagelist" onlychapter="hoofdnavigatie" ]]
+          [[ foreach from=$pagelist item="pageuri" ]]
+            [[ getpage uri=$pageuri ]]
+            <li class="[[ $page.uri ]]">
+              <a href="[[ $page.link ]]">[[ $page.title ]]</a>
+            </li>
+            [[ resetpage ]]
+          [[ /foreach ]]
+        </ul>
+      </nav>
+      <section id="sideimage">
+      </section>

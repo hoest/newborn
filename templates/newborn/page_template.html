@@ -1,0 +1,38 @@
+[[ include file="`$templatedir`/_sub_header.html" ]]
+
+<section class="content">
+  <article id="home">
+    <header class="sub">
+      <h1>[[subtitle]]</h1>
+    </header>
+    <section class="text">
+      [[ introduction ]]
+      [[ body ]]
+    </section>
+  </article>
+</section>
+<section class="extra">
+  [[ getpagelist var="pagelist" onlychapter=$page.uri ]]
+  [[ foreach from=$pagelist item="pageuri" ]]
+    [[ getpage uri=$pageuri ]]
+    <article id="[[ $pageuri ]]">
+      <header class="sub">
+        <section class="date">
+          [[ date format="%day% %monthname% %year%" date=$page.publish_date ]]
+        </section>
+        <h1>[[ $page.title ]]</h1>
+        <section class="more">
+          <a href="#">Read more</a>
+        </section>
+      </header>
+      <section class="text">
+        [[if $page.subtitle != "" ]]<h1>[[subtitle]]</h1>[[/if]]
+        [[ $page.introduction ]]
+        [[ $page.body ]]
+      </section>
+    </article>
+    [[ resetpage ]]
+  [[ /foreach ]]
+</section>
+
+[[ include file="`$templatedir`/_sub_footer.html" ]]

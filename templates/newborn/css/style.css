@@ -1,0 +1,300 @@
+body {
+  text-align:center;
+  font-family: 'Telex', sans-serif;
+  padding: 15px 0px 15px 0px;
+}
+
+strong, h1, h2, h3, h4, h5, h6 {
+  font-weight:bold;
+}
+
+div#container {
+  width: 725px;
+  text-align:left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header#header {
+  width:725px;
+  height:95px;
+}
+
+header#header h1 {
+  display: none;
+}
+
+nav {
+  float: left;
+  width: 100%;
+  clear: both;
+  font-family: 'Amethysta', serif;
+  font-style: italic;
+}
+
+nav ul {
+  float: left;
+  width: 100%;
+  clear: both;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  margin-left: 244px;
+}
+
+nav ul li {
+  float: left;
+  width: 115px;
+  border-bottom-width:6px;
+  border-bottom-style:solid;
+  text-align: center;
+  line-height:26px;
+  margin-right: 7px;
+}
+
+nav ul li a {
+  text-decoration:none;
+  color: #000;
+  display:block;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+#sideimage {
+  width:244px;
+  background-repeat:no-repeat;
+  height: 281px;
+  float: left;
+}
+
+.content {
+  float: left;
+  margin-top: 1em;
+  width: 481px;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content ul,
+.content ol,
+.content table,
+.content div,
+.content p,
+.extra h1,
+.extra h2,
+.extra h3,
+.extra ul,
+.extra ol,
+.extra table,
+.extra div,
+.extra p {
+  margin-bottom: 1em;
+}
+
+.content a,
+.extra a {
+  text-decoration:none;
+}
+
+.content a:hover,
+.extra a:hover {
+  text-decoration:underline;
+}
+
+.extra article {
+  float: left;
+  width: 100%;
+  clear: both;
+}
+
+.extra header.sub {
+  float: left;
+  width: 100%;
+  clear: both;
+  padding: 1ex 0px 1ex 0px;
+}
+
+.extra header.sub h1,
+.extra header.sub section.date,
+.extra header.sub section.more {
+  float: left;
+  margin:0;
+}
+
+.extra header.sub h1 {
+  width: 400px;
+}
+
+.extra header.sub section.date {
+  width: 244px;
+  font-size: .8em;
+}
+
+.extra header.sub section.more {
+  width: 81px;
+  font-size: .8em;
+}
+
+.extra section.text {
+  float: left;
+  width: 481px;
+  clear: both;
+  margin-left: 244px;
+  padding-top: 1em;
+}
+
+/* shuffle */
+nav ul li.works a,
+nav ul li.contact a {
+  padding-bottom:5px;
+}
+
+nav ul li.home a,
+nav ul li.about a {
+  padding-top:5px;
+}
+
+/* coloring per section */
+
+/* home */
+.home header#header {
+  background-image:url('../images/nb-head-home.png');
+}
+
+.home #sideimage {
+  background-image:url('../images/nb-image-home.png');
+}
+
+.home nav {
+  border-bottom:2px solid #ff5400;
+}
+
+nav ul li.home {
+  border-bottom-color:#ff5400;
+}
+
+nav ul li.home a:hover {
+  background-color:#ff5400;
+}
+
+.home .content a,
+.home .extra a {
+  color: #ff5400;
+}
+
+.home .extra article:first-child header.sub {
+  border-top: 1px solid #ff5400;
+}
+
+.home .extra article.border-bottom,
+.home .extra header.sub {
+  border-bottom: 1px solid #ff5400;
+}
+
+/* works */
+.works header#header {
+  background-image:url('../images/nb-head-works.png');
+}
+
+.works #sideimage {
+  background-image:url('../images/nb-image-works.png');
+}
+
+.works nav {
+  border-bottom:2px solid #ff0066;
+}
+
+nav ul li.works {
+  border-bottom-color:#ff0066;
+}
+
+nav ul li.works a:hover {
+  background-color:#ff0066;
+}
+
+.works .content a,
+.works .extra a {
+  color: #ff0066;
+}
+
+.works .extra article:first-child header.sub {
+  border-top: 1px solid #ff0066;
+}
+
+.works .extra article.border-bottom,
+.works .extra header.sub {
+  border-bottom: 1px solid #ff0066;
+}
+
+/* about */
+.about header#header {
+  background-image:url('../images/nb-head-about.png');
+}
+
+.about #sideimage {
+  background-image:url('../images/nb-image-about.png');
+}
+
+.about nav {
+  border-bottom:2px solid #33cc33;
+}
+
+nav ul li.about {
+  border-bottom-color:#33cc33;
+}
+
+nav ul li.about a:hover {
+  background-color:#33cc33;
+}
+
+.about .content a,
+.about .extra a {
+  color: #33cc33;
+}
+
+.about .extra article:first-child header.sub {
+  border-top: 1px solid #33cc33;
+}
+
+.about .extra article.border-bottom,
+.about .extra header.sub {
+  border-bottom: 1px solid #33cc33;
+}
+
+/* contact */
+.contact header#header {
+  background-image:url('../images/nb-head-contact.png');
+}
+
+.contact #sideimage {
+  background-image:url('../images/nb-image-contact.png');
+}
+
+.contact nav {
+  border-bottom:2px solid #0066ff;
+}
+
+nav ul li.contact {
+  border-bottom-color:#0066ff;
+}
+
+nav ul li.contact a:hover {
+  background-color:#0066ff;
+}
+
+.contact .content a,
+.contact .extra a {
+  color: #0066ff;
+}
+
+.contact .extra article:first-child header.sub {
+  border-top: 1px solid #0066ff;
+}
+
+.contact .extra article.border-bottom,
+.contact .extra header.sub {
+  border-bottom: 1px solid #0066ff;
+}
+
