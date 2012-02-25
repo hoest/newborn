@@ -8,6 +8,10 @@ strong, h1, h2, h3, h4, h5, h6 {
   font-weight:bold;
 }
 
+img.pivotx-image {
+  border: none;
+}
+
 div#container {
   width: 725px;
   text-align:left;
