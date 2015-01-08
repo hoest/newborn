@@ -21,7 +21,9 @@ div#container {
 
 header#header {
   width:725px;
-  height:95px;
+  height:125px;
+  background-image:url('../images/nb-head-logo.png');
+  background-repeat:no-repeat;
 }
 
 header#header h1 {
@@ -48,28 +50,27 @@ nav ul {
 nav ul li {
   float: left;
   width: 115px;
-  border-bottom-width:6px;
-  border-bottom-style:solid;
+  height: 74px;
   text-align: center;
-  line-height:26px;
-  margin-right: 7px;
 }
 
 nav ul li a {
   text-decoration:none;
   color: #000;
   display:block;
-}
-
-nav ul li a:hover {
-  color: #fff;
+  width: 115px;
+  height: 74px;
+  text-indent: -9999px;
+  direction: ltr;
+  background-repeat:no-repeat;
 }
 
 #sideimage {
   width:244px;
   background-repeat:no-repeat;
-  height: 281px;
+  height: 189px;
   float: left;
+  margin: 1em 0;
 }
 
 .content {
@@ -137,8 +138,9 @@ nav ul li a:hover {
 }
 
 .extra header.sub section.more {
-  width: 81px;
   font-size: .8em;
+  text-align: right;
+  float: right;
 }
 
 .extra section.text {
@@ -149,156 +151,150 @@ nav ul li a:hover {
   padding-top: 1em;
 }
 
-/* shuffle */
-nav ul li.works a,
-nav ul li.contact a {
-  padding-bottom:5px;
-}
-
-nav ul li.home a,
-nav ul li.about a {
-  padding-top:5px;
-}
-
 /* coloring per section */
 
-/* home */
-.home header#header {
-  background-image:url('../images/nb-head-home.png');
-}
-
-.home #sideimage {
+/* home/hoe */
+.home #sideimage,
+.hoe #sideimage {
   background-image:url('../images/nb-image-home.png');
 }
 
-.home nav {
+.home nav,
+.hoe nav {
   border-bottom:2px solid #ff5400;
 }
 
-nav ul li.home {
-  border-bottom-color:#ff5400;
+nav ul li.home a,
+nav ul li.hoe a {
+  background-image:url('../images/hoe-passief.png');
 }
 
-nav ul li.home a:hover {
-  background-color:#ff5400;
+nav ul li.home a:hover,
+nav ul li.hoe a:hover {
+  background-image:url('../images/hoe-actief.png');
 }
 
 .home .content a,
-.home .extra a {
+.home .extra a,
+.hoe .content a,
+.hoe .extra a {
   color: #ff5400;
 }
 
-.home .extra article:first-child header.sub {
+.home .extra article:first-child header.sub,
+.hoe .extra article:first-child header.sub {
   border-top: 1px solid #ff5400;
 }
 
 .home .extra article.border-bottom,
-.home .extra header.sub {
+.home .extra header.sub,
+.hoe .extra article.border-bottom,
+.hoe .extra header.sub {
   border-bottom: 1px solid #ff5400;
 }
 
-/* works */
-.works header#header {
-  background-image:url('../images/nb-head-works.png');
-}
-
-.works #sideimage {
+/* works/wie */
+.works #sideimage,
+.wie #sideimage {
   background-image:url('../images/nb-image-works.png');
 }
 
-.works nav {
-  border-bottom:2px solid #ff0066;
+nav ul li.works a,
+nav ul li.wie a {
+  background-image:url('../images/wie-passief.png');
 }
 
-nav ul li.works {
-  border-bottom-color:#ff0066;
-}
-
-nav ul li.works a:hover {
-  background-color:#ff0066;
+nav ul li.works a:hover,
+nav ul li.wie a:hover {
+  background-image:url('../images/wie-actief.png');
 }
 
 .works .content a,
-.works .extra a {
+.works .extra a,
+.wie .content a,
+.wie .extra a {
   color: #ff0066;
 }
 
-.works .extra article:first-child header.sub {
+.works .extra article:first-child header.sub,
+.wie .extra article:first-child header.sub {
   border-top: 1px solid #ff0066;
 }
 
 .works .extra article.border-bottom,
-.works .extra header.sub {
+.works .extra header.sub,
+.wie .extra article.border-bottom,
+.wie .extra header.sub {
   border-bottom: 1px solid #ff0066;
 }
 
-/* about */
-.about header#header {
-  background-image:url('../images/nb-head-about.png');
-}
-
-.about #sideimage {
+/* about/wat */
+.about #sideimage,
+.wat #sideimage {
   background-image:url('../images/nb-image-about.png');
 }
 
-.about nav {
-  border-bottom:2px solid #33cc33;
+nav ul li.about a,
+nav ul li.wat a {
+  background-image:url('../images/wat-passief.png');
 }
 
-nav ul li.about {
-  border-bottom-color:#33cc33;
-}
-
-nav ul li.about a:hover {
-  background-color:#33cc33;
+nav ul li.about a:hover,
+nav ul li.wat a:hover {
+  background-image:url('../images/wat-actief.png');
 }
 
 .about .content a,
-.about .extra a {
+.about .extra a,
+.wat .content a,
+.wat .extra a {
   color: #33cc33;
 }
 
-.about .extra article:first-child header.sub {
+.about .extra article:first-child header.sub,
+.wat .extra article:first-child header.sub {
   border-top: 1px solid #33cc33;
 }
 
 .about .extra article.border-bottom,
-.about .extra header.sub {
+.about .extra header.sub,
+.wat .extra article.border-bottom,
+.wat .extra header.sub {
   border-bottom: 1px solid #33cc33;
 }
 
-/* contact */
-.contact header#header {
-  background-image:url('../images/nb-head-contact.png');
-}
-
-.contact #sideimage {
+/* contact/waar */
+.contact #sideimage,
+.waar #sideimage {
   background-image:url('../images/nb-image-contact.png');
 }
 
-.contact nav {
-  border-bottom:2px solid #0066ff;
+nav ul li.contact a,
+nav ul li.waar a {
+  background-image:url('../images/waar-passief.png');
 }
 
-nav ul li.contact {
-  border-bottom-color:#0066ff;
-}
-
-nav ul li.contact a:hover {
-  background-color:#0066ff;
+nav ul li.contact a:hover,
+nav ul li.waar a:hover {
+  background-image:url('../images/waar-actief.png');
 }
 
 .contact .content a,
-.contact .extra a {
+.contact .extra a,
+.waar .content a,
+.waar .extra a {
   color: #0066ff;
 }
 
-.contact .extra article:first-child header.sub {
+.contact .extra article:first-child header.sub,
+.waar .extra article:first-child header.sub {
   border-top: 1px solid #0066ff;
 }
 
 .contact .extra article.border-bottom,
-.contact .extra header.sub {
+.contact .extra header.sub,
+.waar .extra article.border-bottom,
+.waar .extra header.sub {
   border-bottom: 1px solid #0066ff;
 }
 
