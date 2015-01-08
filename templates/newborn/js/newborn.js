@@ -5,7 +5,7 @@ $(function() {
   $('section.more a').click(function() {
     var myId = $(this).parents('article:first').attr('id');
 
-    if(openArticleId != null) {
+    if(openArticleId !== null) {
       // close
       $('#' + openArticleId + ' section.text').slideToggle();
       $('#' + openArticleId).removeClass('border-bottom');
@@ -16,10 +16,14 @@ $(function() {
       var article = $(this).parents('article:first');
       $(article).find('section.text').slideToggle();
       $(article).addClass('border-bottom');
-      $('html, body').animate(
-        { scrollTop: $(this).offset().top },
-        { duration: 'slow', easing: 'swing'}
-      ); // scroll to element
+
+      $('html, body').animate({
+        scrollTop: $(this).offset().top
+      }, {
+        duration: 'slow',
+        easing: 'swing'
+      }); // scroll to element
+
       openArticleId = myId;
     } else {
       openArticleId = null;
