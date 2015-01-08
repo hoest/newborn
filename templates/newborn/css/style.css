@@ -170,7 +170,8 @@ nav ul li.hoe a {
 }
 
 nav ul li.home a:hover,
-nav ul li.hoe a:hover {
+nav ul li.hoe a:hover,
+nav ul li.hoe.active a {
   background-image:url('../images/hoe-actief.png');
 }
 
@@ -199,13 +200,19 @@ nav ul li.hoe a:hover {
   background-image:url('../images/nb-image-works.png');
 }
 
+.works nav,
+.wie nav {
+  border-bottom:2px solid #ff0066;
+}
+
 nav ul li.works a,
 nav ul li.wie a {
   background-image:url('../images/wie-passief.png');
 }
 
 nav ul li.works a:hover,
-nav ul li.wie a:hover {
+nav ul li.wie a:hover,
+nav ul li.wie.active a {
   background-image:url('../images/wie-actief.png');
 }
 
@@ -234,13 +241,19 @@ nav ul li.wie a:hover {
   background-image:url('../images/nb-image-about.png');
 }
 
+.about nav,
+.wat nav {
+  border-bottom:2px solid #33cc33;
+}
+
 nav ul li.about a,
 nav ul li.wat a {
   background-image:url('../images/wat-passief.png');
 }
 
 nav ul li.about a:hover,
-nav ul li.wat a:hover {
+nav ul li.wat a:hover,
+nav ul li.wat.active a {
   background-image:url('../images/wat-actief.png');
 }
 
@@ -269,13 +282,19 @@ nav ul li.wat a:hover {
   background-image:url('../images/nb-image-contact.png');
 }
 
+.contact nav,
+.waar nav {
+  border-bottom:2px solid #0066ff;
+}
+
 nav ul li.contact a,
 nav ul li.waar a {
   background-image:url('../images/waar-passief.png');
 }
 
 nav ul li.contact a:hover,
-nav ul li.waar a:hover {
+nav ul li.waar a:hover,
+nav ul li.waar.active a {
   background-image:url('../images/waar-actief.png');
 }
 
