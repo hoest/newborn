@@ -20,10 +20,10 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
     <!-- CSS: implied media="all" -->
     <link rel="stylesheet" href="[[ template_dir base="true" ]]pivotx_essentials.css" />
-    <link rel="stylesheet" href="[[template_dir]]css/reset.css" />
-    <link rel="stylesheet" href="[[template_dir]]css/style.css" />
+    <link rel="stylesheet" href="[[ template_dir ]]css/reset.css" />
+    <link rel="stylesheet" href="[[ template_dir ]]css/style.css" />
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Amethysta|Telex">
-    <script src="[[template_dir]]js/modernizr.min.js"></script>
+    <script src="[[ template_dir ]]js/modernizr.min.js"></script>
   </head>
   <body>
     <div id="container" class="[[ $page.uri ]]">
@@ -36,7 +36,7 @@
           [[ foreach from=$pagelist item="pageuri" ]]
             [[ getpage uri=$pageuri ]]
             <li class="[[ $page.uri ]]">
-              <a href="[[ $page.link ]]">[[ $page.title ]]</a>
+              <a title="[[ $page.title ]]" href="[[ $page.link ]]">[[ $page.title ]]</a>
             </li>
             [[ resetpage ]]
           [[ /foreach ]]
